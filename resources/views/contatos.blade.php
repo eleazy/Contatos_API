@@ -16,7 +16,7 @@
         <div class="min-h-screen bg-white flex items-start justify-center">
             <div class="w-full max-w-screen-lg ">
                 <h1 class="text-4xl font-semibold text-black text-center">API de Contatos</h1>
-                <p class="text-sm text-black text-center mt-4">Esta é uma API de contatos desenvolvida com Laravel.</p>
+                <p class="text-sm text-black text-center mt-4">API de contatos desenvolvida com Laravel.</p>
                  <div>
                   <div>                      
                     <a href="{{ route('contatos') }}" class='bg-blue-400 text-white rounded-md p-2'>Limpar Filtros</a>
@@ -57,7 +57,7 @@
                 <form class='mt-4 pt-2 border-t-2 border-zinc-500 ' method="POST" action="{{ route('contatos.store') }}">
                   @csrf
                   <button type='submit' class='bg-green-400 text-white rounded-md p-2 mt-4'>Adicionar contato</button>
-                  <div class='flex'>
+                  <div class='flex flex-wrap'>
                     <input type="text" name="nome" placeholder="Nome">
                     <input type="text" name="sobrenome" placeholder="Sobrenome">
                     <input type="date" name="data_nascimento" placeholder="Data de Nascimento">

@@ -53,7 +53,8 @@ class ContatoController
             'data_nascimento' => 'required|date',
             'telefone' => 'required|string',
             'celular' => 'required|string',
-            'email' => 'required|email',            
+            'email' => 'required|email',      
+            'empresa' => 'required|integer'      
         ]);
 
         $contact = new Contato();
